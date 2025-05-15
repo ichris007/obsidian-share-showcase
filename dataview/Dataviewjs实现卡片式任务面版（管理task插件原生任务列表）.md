@@ -20,13 +20,13 @@
 ## Dataviewjs代码
 ```dataviewjs
 // ==== 1. 收集任务 ====
-let tasks1 = dv.pages('"01Projects"').file.tasks;
-let tasks2 = dv.pages('"02Business"').file.tasks;
-let tasks3 = dv.pages('"00Todolist"').file.tasks;
-let tasks4 = dv.pages('"07People"').file.tasks;
-let tasks5 = dv.pages('"00Journal"').file.tasks;
+let taskSources = ["01Projects", "02Business", "00Todolist", "07People", "00Journal"];
+let tasks = [];
 
-let tasks = [...tasks1, ...tasks2, ...tasks3, ...tasks4, ...tasks5];
+// 根据列表信息添加任务
+for (let source of taskSources) {
+    tasks.push(...dv.pages(`"${source}"`).file.tasks);
+}
 
 let today = dv.date("today");
 let tomorrow = dv.date("tomorrow");
@@ -113,9 +113,8 @@ function showTasks(index) {
 
   let queryContainer = taskListContainer.createDiv();
 
-  // 查询路径条件
-  let basePaths = `(path includes 01Projects) OR (path includes 02Business) OR (path includes 00Todolist) OR (path includes People) OR (path includes 00Journal)`;
-
+// 查询路径条件
+let basePaths = taskSources.map(source => `(path includes ${source})`).join(" OR ");
   // 构建任务查询代码块
   let query = [
     categories[index].query,
@@ -142,7 +141,8 @@ showTasks(currentIndex);
 ```
 ## 卡片样式CSS代码
 ```css
-/* ------ 卡片式任务面版样式 -----*/
+
+/* ------ 卡片式任务面板样式（深浅主题自适应） ----- */
 .dropdown-container {
   margin-bottom: 1em;
 }
@@ -152,26 +152,26 @@ showTasks(currentIndex);
   flex-wrap: wrap;
   column-gap: 1px; /* 控制卡片左右间距 */
   row-gap: 2px;     /* 控制卡片上下间距 */
-  margin: 1px 0px; 
+  margin: 1px 0px;
 }
 
 .card {
   background: var(--background-secondary);
-  border-radius: 4px; /* 12px */
-  box-shadow: var(--shadow-s); 
-  padding: 8px 0px; /*10px*/
+  border-radius: 4px;
+  box-shadow: var(--shadow-s);
+  padding: 8px 0px;
   margin: 0px 1px;
   width: 60px;
   height: 60px;
   min-width: 45px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.2s ease; /* background 0.3s; */
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  background: #333;
+  transform: scale(1); /* 鼠标划过卡片时放大倍數，1不变*/
+  background: var(--background-modifier-hover);
 }
 
 .card .number {
@@ -187,18 +187,18 @@ showTasks(currentIndex);
   margin-top: 4px;
 }
 
-
 .underline {
   width: 36px;
   height: 1.5px;
   margin: 1px auto 0;
   border-radius: 1px;
+  background-color: var(--text-muted);
 }
 
 .task-list {
   margin-top: 2px;
   padding-top: 0px;
-  border-top: 1.5px solid #444;
+  border-top: 1.5px solid var(--divider-color);
 }
 
 .task-item {
@@ -206,37 +206,32 @@ showTasks(currentIndex);
   font-size: 14px;
 }
 
-/* .cards-container .card.active {
-/*   border: 1px solid var(--text-accent); /*让激活卡片采用高亮边框*/
-/*  background-color: var(--background-secondary-alt); 
-/*   transform: scale(1.05);
-/* } */
-
+/* 激活状态卡片：背景强调色，自适应文本色 */
 .cards-container .card.active {
-  background-color: var(--background-modifier-hover); /*var(--interactive-accent)：让激活卡片采用主题强调色背景。*/
-  color: white;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
 }
 
 .cards-container .card.active .number,
 .cards-container .card.active .label {
-  color: white;
+  color: var(--text-on-accent);
 }
 
 .cards-container .card.active .underline {
-  background-color: white;
+  background-color: var(--text-on-accent);
 }
+
 ```
 ## 「首页」展示版
 对于想在首页作为任务管理展示用，可对代码进行精简，只展示任务分类和数量，而不展示具体的任务列表（没有任务交互功能），代码如下：
 ```dataviewjs
 // ==== 1. 收集任务 ====
-let tasks1 = dv.pages('"01Projects"').file.tasks;
-let tasks2 = dv.pages('"02Business"').file.tasks;
-let tasks3 = dv.pages('"00Todolist"').file.tasks;
-let tasks4 = dv.pages('"07People"').file.tasks;
-let tasks5 = dv.pages('"00Journal"').file.tasks;
+let taskSources = ["01Projects", "02Business", "00Todolist", "00Journal", "07People"];
+let tasks = [];
 
-let tasks = [...tasks1, ...tasks2, ...tasks3, ...tasks4, ...tasks5];
+for (let source of taskSources) {
+    tasks.push(...dv.pages(`"${source}"`).file.tasks);
+}
 
 let today = dv.date("today");
 let tomorrow = dv.date("tomorrow");
@@ -267,7 +262,7 @@ let afterSevenDaysTasks = tasks.filter(t => t.status === " " && (
 ));
 let completedTasks = tasks.filter(t => t.status === "x");
 
-// ==== 3. 分类设置 ====
+// ==== 3. 分类定义 ====
 const cardsContainer = document.createElement('div');
 cardsContainer.className = 'cards-container';
 
@@ -282,28 +277,22 @@ let categories = [
   { name: "已完成", tasks: completedTasks, color: "#9e9e9e" },
 ];
 
-// 当前选中分类索引
-let currentIndex = -1;
+// ==== 4. 渲染分类卡片（无任务展示） ====
+categories.forEach((cat) => {
+  let card = cardsContainer.createDiv({ cls: "card" });
 
-// 显示分类卡片
-categories.forEach((cat, index) => {
-  let card = cardsContainer.createDiv({cls: "card"});
-  let numberDiv = card.createDiv({cls: "number", text: String(cat.tasks.length)});
+  // 数字
+  let numberDiv = card.createDiv({ cls: "number", text: cat.tasks.length.toString() });
   numberDiv.style.color = cat.color;
-  let labelDiv = card.createDiv({cls: "label", text: cat.name});
-  let underline = card.createDiv({cls: "underline"});
-  underline.style.backgroundColor = cat.color;
 
-  card.onclick = () => {
-    // 取消旧高亮
-    if (currentIndex !== -1) {
-      cardsContainer.children[currentIndex].classList.remove("active");
-    }
-    // 添加当前高亮
-    card.classList.add("active");
-    currentIndex = index;
-  };
+  // 标签
+  let labelDiv = card.createDiv({ cls: "label", text: cat.name });
+
+  // 下划线颜色
+  let underline = card.createDiv({ cls: "underline" });
+  underline.style.backgroundColor = cat.color;
 });
 
 dv.container.appendChild(cardsContainer);
+
 ```
