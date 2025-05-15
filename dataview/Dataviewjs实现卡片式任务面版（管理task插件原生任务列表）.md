@@ -19,6 +19,8 @@
 
 ## Dataviewjs代码
 ```dataviewjs
+// 作者 ichris007，更多实用示例见 https://github.com/ichris007
+
 // ==== 1. 收集任务 ====
 let taskSources = ["01Projects", "02Business", "00Todolist", "07People", "00Journal"];
 let tasks = [];
@@ -141,6 +143,8 @@ showTasks(currentIndex);
 ```
 ## 卡片样式CSS代码
 ```css
+
+/* 作者 ichris007，更多实用示例见 https://github.com/ichris007 */
 
 /* ------ 卡片式任务面板样式（深浅主题自适应） ----- */
 .dropdown-container {
