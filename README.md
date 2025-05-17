@@ -1,4 +1,4 @@
-# Obsidian示例库——[Lifein](https://github.com/ichris007/Obsidian_Lifein)：生产力 & 人生管理系統
+# 一、Obsidian示例库——[Lifein](https://github.com/ichris007/Obsidian_Lifein)：生产力 & 人生管理系統
 
 ![首页_深浅色对比](https://github.com/user-attachments/assets/db70a208-1e20-4dea-8cca-99d7b2cc1f69)
 
@@ -24,7 +24,7 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 - 书籍/读书笔记管理
 - 影视剧及观后感记录
 
-# Obsidian-share-showcase
+# 二、Obsidian-share-showcase
 不是程序员，但喜欢折腾。分享自己制作和修改的实用脚本和CSS Snippets。
 
 
@@ -58,3 +58,7 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
   
 ![1747276472135](https://github.com/user-attachments/assets/47ad72b9-7b5f-47a9-a5d9-4a20e469362e)
 </details>
+
+# 三、个人开发的插件
+## 1.快速开关指定插件
+[插件地址](https://github.com/ichris007/obsidian-quick-toggle-plugin)
