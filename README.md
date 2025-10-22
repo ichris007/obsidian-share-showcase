@@ -27,8 +27,19 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 # 二、Obsidian-share-showcase
 不是程序员，但喜欢折腾。分享自己制作和修改的实用脚本和CSS Snippets。
 
+## 一、[「日记皮肤」每天自动换一套](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/%E3%80%8C%E6%97%A5%E8%AE%B0%E7%9A%AE%E8%82%A4%E3%80%8D%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%89%B2%EF%BC%8C%E5%91%8A%E5%88%AB%E6%9E%AF%E7%87%A5%E7%AC%94%E8%AE%B0.md)
+<details>
+  <summary>点击展开看效果</summary>
 
-## 一、Callout Styling
+  ### 适配浅色主题
+![日记_浅色_对比图](https://github.com/user-attachments/assets/cb7f44a0-9444-4d63-99ee-2a28c840ebad)
+
+### 适配深色主题
+![日记_深色_对比图](https://github.com/user-attachments/assets/b77527ae-1349-4cc4-8c4c-5e180b3b1272)
+
+</details>
+
+## 二、Callout Styling
 ### 1.[Sidenotes 边注（右侧）](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Callout%20styling%20-%20Sidenotes_%E5%8F%B3%E8%BE%B9%E6%B3%A8.md)
 <details>
   <summary>点击展开看效果</summary>
@@ -43,7 +54,7 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 ![双边注](https://github.com/user-attachments/assets/2983cf7b-33d0-4956-8522-128278241bcc)
 </details>
 
-## 二、Dataview使用
+## 三、Dataview使用
 ### 1.[Dataviewjs实现卡片式任务面版（管理task插件原生任务列表）](https://github.com/ichris007/obsidian-share-showcase/blob/main/dataview/Dataviewjs%E5%AE%9E%E7%8E%B0%E5%8D%A1%E7%89%87%E5%BC%8F%E4%BB%BB%E5%8A%A1%E9%9D%A2%E7%89%88%EF%BC%88%E7%AE%A1%E7%90%86task%E6%8F%92%E4%BB%B6%E5%8E%9F%E7%94%9F%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%89.md)
 
 <details>
@@ -59,6 +70,6 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 ![1747276472135](https://github.com/user-attachments/assets/47ad72b9-7b5f-47a9-a5d9-4a20e469362e)
 </details>
 
-# 三、个人开发的插件
+# 四、个人开发的插件
 ## 1.快速开关指定插件
 [插件地址](https://github.com/ichris007/obsidian-quick-toggle-plugin)
