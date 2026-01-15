@@ -1,0 +1,324 @@
+/* ==================================================================
+    ACTIVITIES  (HEATMAP)
+    - Author: @furbas16e8 (https://github.com/furbas16e8) 
+              @ichris007 (https://github.com/ichris007)
+    - Styling for heatmaps generated via DatacoreJSX
+    - Re.:: activities.jsx
+   ================================================================== */
+
+.ativ-heatmaps-container {
+  /* --- PALETTE COLORS (ACTIVITIES) --- */
+  --ativ-c0: #e6e6e6;
+  --ativ-c1: #7EBAFF;
+  --ativ-c2: #5FAAFF;
+  --ativ-c3: #3F99FF;
+  --ativ-c4: #2089FF;
+  --ativ-c5: #0078FF;
+  --ativ-c6: #0061CC;
+  --ativ-c7: #004999;
+  --ativ-c8: #003266;
+  --ativ-c9: #001a33;
+  --ativ-c10: #001A33;
+  
+  /* --- STRUCTURAL DEFINITIONS (STANDARDIZED) --- */
+  --ativ-font-ui: "Montserrat", sans-serif;
+  --ativ-font-mono: "JetBrains Mono", monospace;
+  
+  --ativ-padding-container: 2px 20px;
+  --ativ-subtitle-size: 12pt;
+  --ativ-subtitle-tracking: 0.2rem;
+  --ativ-title-margin: 12px auto 0;
+  
+  --ativ-motion-slow: 0.45s;
+  
+  /* --- TEXT COLORS & UI --- */
+  --ativ-text-normal: var(--text-normal, #333);
+  --ativ-text-muted: var(--text-muted, #888);
+  --ativ-text-accent: var(--text-accent, #2089FF);
+  --ativ-text-faint: var(--text-faint, #ccc);
+  
+  --ativ-card-bg: var(--background-secondary, #f1f1f1);
+  --ativ-menu-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  --ativ-link-color: var(--link-color, #2089FF);
+  --ativ-hover-bg: var(--background-modifier-hover, rgba(0,0,0,0.05));
+  
+  /* --- DIVIDER (HIGHLIGHT LINE) --- */
+  --ativ-divider-inner: #00171f; /* Dark default fallback */
+  --ativ-divider-out: #2089FF;   /* Accent color substitute */
+
+  /* --- COMPONENT SPECIFIC METRICS --- */
+  --ativ-cell-size: 14px;
+  --ativ-cell-gap: 3px;
+  --ativ-radius: 2px;
+}
+
+/* Theme Fallbacks (Simple) */
+body.theme-light .ativ-heatmaps-container {
+    --ativ-divider-inner: #00171f;
+    --ativ-divider-out: #2089FF; 
+}
+body.theme-dark .ativ-heatmaps-container {
+    --ativ-c0: #00131A;
+    --ativ-c1: #002C3C;
+    --ativ-c2: #1F5767;
+    --ativ-c3: #3F8192;
+    --ativ-c4: #5EACBD;
+    --ativ-c5: #7DD6E8;
+    --ativ-c6: #95DCED;
+    --ativ-c7: #ADE3F2;
+    --ativ-c8: #C5E9F6;
+    --ativ-c9: #DDEFFB;
+    --ativ-c10: #E6F7FD;
+    
+    --ativ-divider-inner: #ffffff;
+    --ativ-divider-out: #2089FF;
+}
+
+/* ===================== */
+/* TITLE LAYOUT          */
+/* ===================== */
+
+/* Header with divider line (Highlight Line) */
+.ativ-heatmaps-container .title-tabs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.ativ-heatmaps-container .title-tabs::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  pointer-events: none;
+  border-radius: 999px;
+  background: radial-gradient(
+      circle at center,
+      var(--ativ-divider-inner) 25%,
+      var(--ativ-divider-out) 55%,
+      transparent 100%
+  );
+}
+
+.ativ-heatmaps-container .title-tab {
+    margin: 1rem 0.5rem 0.5rem 0.5rem; /* Spacing adjustment */
+    font-size: 18pt; /* Size similar to global */
+    font-weight: 500;
+    color: var(--ativ-text-normal);
+    letter-spacing: 0.2rem;
+}
+
+
+/* ===================== */
+/* CONTENT LAYOUT        */
+/* ===================== */
+
+.ativ-heatmaps-container {
+  display: block;
+  min-height: 250px;
+  padding: var(--ativ-padding-container);
+  position: relative;
+  z-index: 1;
+  animation: ativ-card-fadeIn .5s ease forwards;
+  will-change: opacity;
+}
+
+@keyframes ativ-card-fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ativ-heatmap-root { position: relative; }
+
+.ativ-heatmap-title {
+  color: var(--ativ-text-normal);
+  font-weight: 500;
+  font-size: var(--ativ-subtitle-size);
+  letter-spacing: var(--ativ-subtitle-tracking);
+  text-align: center;
+  min-height: 2em;
+  margin: var(--ativ-title-margin);
+}
+
+.ativ-heatmaps-shell {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2px;
+  align-items: start;
+  position: relative;
+}
+
+.ativ-heatmap-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+/* ============================== */
+/* CELLS AND COLORS               */
+/* ============================== */
+
+.ativ-heatmap-cell {
+  cursor: pointer;
+  stroke: none;
+  transition: fill var(--ativ-motion-slow), transform 0.2s;
+}
+
+.ativ-heatmap-cell[data-level="0"] { fill: var(--ativ-c0); pointer-events: none; }
+.ativ-heatmap-cell[data-level="1"] { fill: var(--ativ-c1); }
+.ativ-heatmap-cell[data-level="2"] { fill: var(--ativ-c2); }
+.ativ-heatmap-cell[data-level="3"] { fill: var(--ativ-c3); }
+.ativ-heatmap-cell[data-level="4"] { fill: var(--ativ-c4); }
+.ativ-heatmap-cell[data-level="5"] { fill: var(--ativ-c5); }
+.ativ-heatmap-cell[data-level="6"] { fill: var(--ativ-c6); }
+.ativ-heatmap-cell[data-level="7"] { fill: var(--ativ-c7); }
+.ativ-heatmap-cell[data-level="8"] { fill: var(--ativ-c8); }
+.ativ-heatmap-cell[data-level="9"] { fill: var(--ativ-c9); }
+.ativ-heatmap-cell[data-level="10"] { fill: var(--ativ-c10); }
+
+.ativ-heatmap-cell:not([data-level="0"]):hover {
+  opacity: 1;
+  fill: var(--ativ-link-color);
+  transform: translateY(-2px);
+}
+
+.ativ-heatmap-month-label {
+    fill: var(--ativ-text-muted);
+    font-size: 9px;
+    font-family: var(--ativ-font-ui);
+}
+
+/* ========================================================================== */
+/* TOOLTIP AND MENU                                                           */
+/* ========================================================================== */
+
+.ativ-heatmap-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--ativ-text-normal);
+  color: var(--ativ-card-bg);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: var(--ativ-font-ui);
+  z-index: 100;
+  white-space: nowrap;
+  transition: opacity 0.2s, top 0.2s, left 0.2s;
+}
+
+.ativ-heatmap-menu {
+  position: absolute;
+  background: var(--ativ-card-bg);
+  color: var(--ativ-text-normal);
+  border-radius: 8px;
+  border: 1px solid var(--ativ-text-muted);
+  padding: 8px;
+  z-index: 2000;
+  max-height: 600px;
+  min-width: 250px;
+  max-width: 90%;
+  overflow-y: auto;
+  box-shadow: var(--ativ-menu-shadow);
+}
+
+.ativ-heatmap-menu-title {
+  font-weight: bold;
+  font-size: 12pt;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--ativ-text-muted);
+}
+
+.ativ-heatmap-menu-item { padding: 3px 0; }
+
+.ativ-heatmap-menu-item a {
+  color: var(--ativ-text-accent);
+  text-decoration: none;
+  font-size: 10pt;
+  display: block;
+  padding: 4px 6px;
+  border-radius: 3px;
+  white-space: normal;
+  text-overflow: clip;
+  word-break: break-word;
+}
+.ativ-heatmap-menu-item a:hover { background: var(--ativ-hover-bg); }
+
+.ativ-heatmap-menu.align-right { transform: translateX(0); margin-left: 10px; }
+.ativ-heatmap-menu.align-left { transform: translateX(-100%); margin-left: -10px; }
+
+/* ========================================================================== */
+/* STATS GRID                                                                 */
+/* ========================================================================== */
+
+.ativ-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 5px;
+  width: 95%;
+  font-family: var(--ativ-font-ui);
+  font-size: 0.75em;
+}
+
+.ativ-stat-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ativ-stat-header { color: var(--ativ-text-normal); font-style: normal; }
+.ativ-stat-val { color: var(--ativ-text-normal); font-weight: 300; font-family: var(--ativ-font-mono); }
+
+/* ========================================================================== */
+/* TREND CHART                                                                */
+/* ========================================================================== */
+
+.ativ-trend-container {
+  margin-top: 12px;
+  padding-top: 8px;
+  width: 95%;
+}
+
+.ativ-trend-svg {
+  display: block;
+  height: 40px;
+  width: 95%;
+  overflow: visible;
+  margin: 18px;
+  --grad-top: var(--ativ-c4);
+  --grad-bottom: var(--ativ-card-bg);
+  --grad-top-hover: var(--ativ-text-accent);
+}
+
+.ativ-trend-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 8pt;
+  color: var(--ativ-text-muted);
+}
+.ativ-trend-sep-group { color: var(--ativ-text-faint); margin: 0 2px; }
+.ativ-trend-toggle { cursor: pointer; user-select: none; display: flex; gap: 3px; }
+.ativ-trend-toggle span:hover { color: var(--ativ-text-normal); }
+.ativ-trend-toggle .is-active { color: var(--ativ-text-normal); font-weight: bold; }
+
+.ativ-trend-element-bar {
+  fill: var(--fill-normal);
+  opacity: 0.6;
+}
+.ativ-trend-element-bar:hover {
+  fill: var(--fill-hover) !important;
+  opacity: 1;
+}
+
+.ativ-trend-area-fill { opacity: 0.3; stroke: none; }
+.ativ-trend-area-line {
+    stroke: var(--ativ-text-accent);
+    stroke-width: 1.5px;
+    fill: none;
+}
+.ativ-trend-trigger { cursor: crosshair; }
+.ativ-trend-trigger:hover { fill: var(--ativ-hover-bg); opacity: 0.2; }
