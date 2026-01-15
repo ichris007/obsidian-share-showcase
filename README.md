@@ -60,16 +60,25 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 <details>
   <summary>点击展开看效果</summary>
   
-![卡片式任务面版](https://github.com/user-attachments/assets/023df5f9-b671-426b-b1e1-90a589679dfc)
+![卡片式任务面版](https://github-production-user-asset-6210df.s3.amazonaws.com/30898935/440376585-023df5f9-b671-426b-b1e1-90a589679dfc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260115T044726Z&X-Amz-Expires=300&X-Amz-Signature=8dff8aa58b2d58151438332d7d8fa13aa7f2b15b7781cc07fdd4dfa63793874e&X-Amz-SignedHeaders=host)
 </details>
 
 ### 2.[年倒计时（像素格样式）](https://github.com/ichris007/obsidian-share-showcase/blob/main/dataview/%E5%B9%B4%E5%80%92%E8%AE%A1%E6%97%B6_%E5%83%8F%E7%B4%A0%E6%A0%BC%E6%A0%B7%E5%BC%8F.md)
 <details>
   <summary>点击展开看效果</summary>
   
-![1747276472135](https://github.com/user-attachments/assets/47ad72b9-7b5f-47a9-a5d9-4a20e469362e)
+![1747276472135](https://github-production-user-asset-6210df.s3.amazonaws.com/30898935/443918755-47ad72b9-7b5f-47a9-a5d9-4a20e469362e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260115T044947Z&X-Amz-Expires=300&X-Amz-Signature=9362ff792afe1af39a81ff8d8c8513e0edd453a9c25037e7ea5130d8a185931e&X-Amz-SignedHeaders=host)
 </details>
 
-# 四、个人开发的插件
-## 1.快速开关指定插件
+## 四、Datacore使用
+### 1. [Vault交互式全景看板_笔记热力图和回忆仪表盘](https://github.com/ichris007/obsidian-share-showcase/tree/main/datacore/Vault%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%85%A8%E6%99%AF%E7%9C%8B%E6%9D%BF_%E7%AC%94%E8%AE%B0%E7%83%AD%E5%8A%9B%E5%9B%BE%E5%92%8C%E5%9B%9E%E5%BF%86%E4%BB%AA%E8%A1%A8%E7%9B%98)
+
+<details>
+  <summary>点击展开看效果</summary>
+  
+![Vault交互式全景看板](https://github.com/ichris007/obsidian-share-showcase/blob/main/datacore/Vault%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%85%A8%E6%99%AF%E7%9C%8B%E6%9D%BF_%E7%AC%94%E8%AE%B0%E7%83%AD%E5%8A%9B%E5%9B%BE%E5%92%8C%E5%9B%9E%E5%BF%86%E4%BB%AA%E8%A1%A8%E7%9B%98/Activities_dashboard.gif)
+</details>
+
+## 五、个人开发的插件
+### 1.快速开关指定插件
 [插件地址](https://github.com/ichris007/obsidian-quick-toggle-plugin)
