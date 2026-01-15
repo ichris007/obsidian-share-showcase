@@ -1,0 +1,185 @@
+/* ==================================================================
+    MEMORIES
+    - Author: @furbas16e8 (https://github.com/furbas16e8) 
+              @ichris007 (https://github.com/ichris007)
+    - Styling for the daily memories block.
+    - Ref.: memories.jsx
+   ================================================================== */
+
+.memorias-root {
+    /* --- LOCAL VARIABLES (STANDARDIZATION) --- */
+    
+    /* Text Colors */
+    --mem-text-normal: var(--text-normal, #333);
+    --mem-text-muted: var(--text-muted, #888);
+    --mem-text-light: var(--text-faint, #ccc);
+    
+    /* Layout */
+    --mem-padding-container: 2px 20px;
+    --mem-gap-subtabs: 1.5rem;
+    --mem-gap-small: 0.5rem;
+    --mem-radius: 12px;
+    
+    /* Highlight Line Colors (Gradient) */
+    --mem-divider-inner: #00171f; /* Dark default fallback */
+    --mem-divider-out: #fca311;   /* Amber (memories default) */
+    
+    /* Components */
+    --mem-card-bg: var(--background-secondary, #f1f1f1);
+    --mem-highlight: #fca311; 
+    --mem-hover-border: #fca311;
+    --mem-tab-inactive: 0.7;
+    --mem-tab-active: 1;
+    
+    /* Typography */
+    --mem-subtitle-size: 12pt;
+    --mem-subtitle-tracking: 0.2rem;
+    --mem-text-size: 10pt;
+    
+    display: block;
+    min-height: 220px;
+    padding: var(--mem-padding-container);
+    animation: mem-root-entry .6s ease forwards;
+    will-change: min-height;
+}
+
+/* Theme Fallbacks */
+body.theme-light .memorias-root {
+    --mem-divider-inner: #00171f;
+    --mem-divider-out: #fca311;
+}
+body.theme-dark .memorias-root {
+    --mem-divider-inner: #ffffff;
+    --mem-divider-out: #fca311;
+    --mem-card-bg: var(--background-secondary, #001016);
+}
+
+
+/* ==========================================================================
+   TITLE AND HIGHLIGHT LINE
+   ========================================================================== */
+
+/* Header with divider line, replicating dashboard style */
+.memorias-root .title-tabs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2rem; /* Space after the line */
+}
+
+/* The Gradient Line */
+.memorias-root .title-tabs::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  pointer-events: none;
+  border-radius: 999px;
+  background: radial-gradient(
+      circle at center,
+      var(--mem-divider-inner) 25%,
+      var(--mem-divider-out) 55%,
+      transparent 100%
+  );
+}
+
+.memorias-root .title-tab {
+    cursor: pointer;
+    font-size: 18pt;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    opacity: 0.8;
+    color: var(--mem-text-normal);
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.memorias-root .title-tab.is-active {
+    font-weight: 500;
+    opacity: 1;
+}
+
+/* ==========================================================================
+   CONTENT AND TABS
+   ========================================================================== */
+
+.mem-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--mem-gap-subtabs);
+  justify-content: center;
+  align-items: baseline;
+  line-height: 1;
+  margin: 12px 0 24px 0;
+}
+
+.mem-tab {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  letter-spacing: var(--mem-subtitle-tracking);
+  font-size: var(--mem-subtitle-size);
+  font-weight: 300;
+  color: var(--mem-text-normal);
+  opacity: var(--mem-tab-inactive);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.mem-tab:hover { opacity: 0.85; }
+.mem-tab.mem-tab--active { font-weight: 500; opacity: var(--mem-tab-active); transform: scale(1.05); }
+
+/* Subtitle (Date) */
+.mem-subtitle {
+  color: var(--mem-text-normal);
+  opacity: 0.85;
+  font-size: 11pt;
+  margin: 1em;
+  text-align: center;
+  letter-spacing: var(--mem-subtitle-tracking);
+}
+.mem-empty { text-align: center; margin-top: 2rem; color: var(--mem-text-muted); }
+
+
+/* ==========================================================================
+   CARDS
+   ========================================================================== */
+   
+.mem-grid { display: flex; flex-direction: column; gap: 1rem; }
+
+.mem-card {
+  border-radius: var(--mem-radius);
+  padding: 1rem 1.5rem;
+  background: var(--mem-card-bg);
+  opacity: 0;
+  animation: mem-card-entry .6s ease forwards;
+  transition: background-color 0.15s, box-shadow 0.45s, transform 0.15s;
+  border-left: 4px solid transparent;
+  margin: 0px;
+}
+.mem-card:hover { border-left-color: var(--mem-hover-border); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.mem-head {
+  display: flex; align-items: baseline; gap: var(--mem-gap-small);
+  font-weight: 500; font-size: 12pt; color: var(--mem-text-normal);
+  margin-bottom: 4px; opacity: .6;
+}
+.mem-card:hover .mem-head { color: var(--mem-highlight); opacity: 1; }
+
+.mem-time { opacity: .4; font-size: 9pt; }
+.mem-body { font-weight: 400; font-size: var(--mem-text-size); opacity: .5; line-height: 1.5; }
+.mem-card:hover .mem-body { opacity: 1; }
+
+.mem-body a.internal-link { color: inherit !important; text-decoration: none !important; pointer-events: none; }
+
+
+@keyframes mem-root-entry { from { opacity: 0; } to { opacity: 1; } }
+@keyframes mem-card-entry { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Staggering */
+.mem-card:nth-child(1) { animation-delay: 0.05s; }
+.mem-card:nth-child(2) { animation-delay: 0.10s; }
+.mem-card:nth-child(3) { animation-delay: 0.15s; }
+.mem-card:nth-child(4) { animation-delay: 0.20s; }
+.mem-card:nth-child(5) { animation-delay: 0.25s; }

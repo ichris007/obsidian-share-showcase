@@ -1,0 +1,104 @@
+/* ============================================================================
+   dashboard.css — Styles for notes with `cssclasses: dashboard`
+   Author: @furbas16e8 (https://github.com/furbas16e8) 
+           @ichris007 (https://github.com/ichris007)
+   1) Sets maximum text width for improved readability.
+   2) Hides the inline title (file.title).
+   3) Completely removes the view header.
+   Only affects notes with `cssclasses: dashboard` in the YAML frontmatter.
+   ============================================================================ */
+
+@import url("root.css");
+
+.dashboard {
+  --dashboard-text-max-width: 1400px;
+}
+
+/* ----------------------------------------------------------------------------
+   1) MAXIMUM TEXT WIDTH (reading and editing views)
+   ---------------------------------------------------------------------------- */
+.markdown-reading-view.dashboard,
+.markdown-preview-view.dashboard,
+.markdown-source-view.mod-cm6.dashboard {
+  --text-max-width: var(--dashboard-text-max-width);
+}
+
+/* ----------------------------------------------------------------------------
+   2) INLINE TITLE
+   ---------------------------------------------------------------------------- */
+.dashboard .inline-title {
+  display: none;
+/*
+  font-size: var(--inline-size-title);
+  font-weight: var(--text-weight-medium);
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+*/
+}
+
+/* ----------------------------------------------------------------------------
+   3) VIEW HEADER (address bar)
+   ---------------------------------------------------------------------------- */
+.workspace-leaf:has(.dashboard) .view-header {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+
+/* ----------------------------------------------------------------------------
+   4) MAIN TABS
+   ---------------------------------------------------------------------------- */
+/* Divider line below global titles */
+.dashboard .title-tabs{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dashboard .title-tabs::after{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  pointer-events: none;
+  border-radius: 999px;
+  background: radial-gradient(
+			  circle at center,
+			  var(--divider-line-inner) 25%,
+			  var(--divider-line-out) 55%,
+			  transparent 100%);
+}
+
+/* Individual tab titles */
+.dashboard .title-tab{
+  align-content: center;
+  margin: 2rem 0.5rem 0 0.5rem;
+  cursor: pointer;
+  color: var(--text-normal);
+  opacity: var(--tabs-opacity-inactive);
+  letter-spacing: var(--global-title-tracking);
+  font-size: var(--global-title-size);
+  font-weight: var(--text-weight-light);
+
+  transition:
+    opacity var(--motion-fast) ease;
+}
+
+.dashboard .title-tab:hover{
+  opacity: var(--tabs-opacity-hover);
+}
+
+.dashboard .title-tab.is-active{
+  font-weight: var(--text-weight-heavy);
+  opacity: var(--tabs-opacity-active);
+}
+
+.dashboard .title-tab:active{
+  transform: scale(.95);
+  transition-duration: 80ms;
+}
