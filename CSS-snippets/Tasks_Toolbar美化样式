@@ -1,8 +1,8 @@
-
+![](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/assets/Tasks_toolbar_CSS.gif)
 
 
 代码：
-
+```css
 /* ==============================
    Tasks Toolbar - Compact Minimal + Hover Highlight
    Author: 科叔
@@ -110,3 +110,4 @@
         background: var(--background-modifier-hover)10;
     }
 }
+```
