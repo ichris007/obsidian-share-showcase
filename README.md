@@ -79,6 +79,15 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 ![Vault交互式全景看板](https://github.com/ichris007/obsidian-share-showcase/blob/main/datacore/Vault%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%85%A8%E6%99%AF%E7%9C%8B%E6%9D%BF_%E7%AC%94%E8%AE%B0%E7%83%AD%E5%8A%9B%E5%9B%BE%E5%92%8C%E5%9B%9E%E5%BF%86%E4%BB%AA%E8%A1%A8%E7%9B%98/Activities_dashboard.gif)
 </details>
 
-## 五、个人开发的插件
+## 五、Tasks相关
+### 1. [Toolbar美化](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Tasks_Toolbar%E7%BE%8E%E5%8C%96%E6%A0%B7%E5%BC%8F.md)
+
+<details>
+  <summary>点击展开看效果</summary>
+
+![](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/assets/Tasks_toolbar_CSS.gif)
+</details>
+
+## 六、个人开发的插件
 ### 1.快速开关指定插件
 [插件地址](https://github.com/ichris007/obsidian-quick-toggle-plugin)
