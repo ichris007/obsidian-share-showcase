@@ -1,33 +1,20 @@
-# 一、Obsidian示例库——[Lifein](https://github.com/ichris007/Obsidian_Lifein)：生产力 & 人生管理系統
+# Obsidian示例库——[Lifein](https://github.com/ichris007/Obsidian_Lifein)：生产力 & 人生管理系統
 
 ![首页_深浅色对比](https://github.com/user-attachments/assets/db70a208-1e20-4dea-8cca-99d7b2cc1f69)
 
-### 1. 打造这个系统的目标  
+[Lifein](https://github.com/ichris007/Obsidian_Lifein)是一个基于Obsidian构建的「生产力系统 & 人生管理系统」示例库。
 
-**不只是为了项目、任务、知识管理这类功能性的「个人生产力系统」（Productivity OS），而是希望它能在长期积累中，成为真正陪伴我成长的「人生管理系统」(Life OS)。**
+Lifein —— 寓意是“进入生活核心、融入人生系统”，也象征着 “生活在其中”。
 
-所以，我给这套系统起名叫 **[Lifein](https://github.com/ichris007/Obsidian_Lifein)**，寓意是“进入生活核心、融入人生系统”，也象征着 “生活在其中”。
+Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 
-Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
+我希望它，不仅是一款工具，更是成为真正陪伴个人成长的「人生管理系统」(Life OS)。
 
-我希望你使用它，不仅是作为一款工具，而是把它融入生活，变成陪你一起精进、成长的伙伴。
-
-### 2. 系统构建
-聚焦在人生三大领域：工作、生活、个人成长，并结合项目管理、任务管理、日记系统、内容创作系统、书籍/读书笔记管理、影视剧/观后感记录、习惯追踪、知识管理，打造一个一站式的数字空间。
-- *系统基本都是模块化的，可以根据自己的需求灵活调整。* 希望你把它变成自己的成长系统。
-
-这次发布的基础版包含的核心功能有：
-- 日记及周回顾
-- 项目管理
-- 任务管理
-- 习惯追踪
-- 书籍/读书笔记管理
-- 影视剧及观后感记录
-
-# 二、Obsidian-share-showcase
+# Obsidian-share-showcase
 不是程序员，但喜欢折腾。分享自己制作和修改的实用脚本和CSS Snippets。
 
-## 一、[「日记皮肤」每天自动换一套](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/%E3%80%8C%E6%97%A5%E8%AE%B0%E7%9A%AE%E8%82%A4%E3%80%8D%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%89%B2%EF%BC%8C%E5%91%8A%E5%88%AB%E6%9E%AF%E7%87%A5%E7%AC%94%E8%AE%B0.md)
+## 一、日记模板
+[「日记皮肤」每天自动换一套](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/%E3%80%8C%E6%97%A5%E8%AE%B0%E7%9A%AE%E8%82%A4%E3%80%8D%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%89%B2%EF%BC%8C%E5%91%8A%E5%88%AB%E6%9E%AF%E7%87%A5%E7%AC%94%E8%AE%B0.md)
 <details>
   <summary>点击展开看效果</summary>
 
@@ -60,14 +47,14 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 <details>
   <summary>点击展开看效果</summary>
   
-![卡片式任务面版](https://github-production-user-asset-6210df.s3.amazonaws.com/30898935/440376585-023df5f9-b671-426b-b1e1-90a589679dfc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260115T044726Z&X-Amz-Expires=300&X-Amz-Signature=8dff8aa58b2d58151438332d7d8fa13aa7f2b15b7781cc07fdd4dfa63793874e&X-Amz-SignedHeaders=host)
+![卡片式任务面版](https://private-user-images.githubusercontent.com/30898935/440376585-023df5f9-b671-426b-b1e1-90a589679dfc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI1NTI2NzIsIm5iZiI6MTc3MjU1MjM3MiwicGF0aCI6Ii8zMDg5ODkzNS80NDAzNzY1ODUtMDIzZGY1ZjktYjY3MS00MjZiLWIxZTEtOTBhNTg5Njc5ZGZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAzVDE1MzkzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlN2E4NzM3NzFmY2YwZDU4ZWVjYWI4NTUxZjZjYTFkNTUwNWVlNTVkNmQxYmI1YjdlYTc3NDQ2Nzk3ZmYzN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.d8zzaPpsBSCd8vEOHHtA1ULR1nJtRdqsrgH3g_aNee4)
 </details>
 
 ### 2.[年倒计时（像素格样式）](https://github.com/ichris007/obsidian-share-showcase/blob/main/dataview/%E5%B9%B4%E5%80%92%E8%AE%A1%E6%97%B6_%E5%83%8F%E7%B4%A0%E6%A0%BC%E6%A0%B7%E5%BC%8F.md)
 <details>
   <summary>点击展开看效果</summary>
   
-![1747276472135](https://github-production-user-asset-6210df.s3.amazonaws.com/30898935/443918755-47ad72b9-7b5f-47a9-a5d9-4a20e469362e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260115T044947Z&X-Amz-Expires=300&X-Amz-Signature=9362ff792afe1af39a81ff8d8c8513e0edd453a9c25037e7ea5130d8a185931e&X-Amz-SignedHeaders=host)
+![年倒计时](https://private-user-images.githubusercontent.com/30898935/443918755-47ad72b9-7b5f-47a9-a5d9-4a20e469362e.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI1NTI3MzIsIm5iZiI6MTc3MjU1MjQzMiwicGF0aCI6Ii8zMDg5ODkzNS80NDM5MTg3NTUtNDdhZDcyYjktN2I1Zi00N2E5LWE1ZDktNGEyMGU0NjkzNjJlLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAzVDE1NDAzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcwMGZmZjBiZDBmNzM4OTc0OTdhYjJhNzFkYWI1NjdkYjY1OTVhMjUxMTExYjVmYTRmYjAzMjJmNTY2OGRiMzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.h8W1u_UvHa5VEcLVrzYzq5iF-cZWYjUbpLuyf_7I57U)
 </details>
 
 ## 四、Datacore使用
@@ -80,12 +67,20 @@ Lifein 的 Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。
 </details>
 
 ## 五、Tasks相关
-### 1. [Toolbar美化](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Tasks_Toolbar%E7%BE%8E%E5%8C%96%E6%A0%B7%E5%BC%8F.md)
+### 1. [Tasks Toolbar美化](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Tasks_Toolbar%E7%BE%8E%E5%8C%96%E6%A0%B7%E5%BC%8F.md)
 
 <details>
   <summary>点击展开看效果</summary>
 
 ![](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/assets/Tasks_toolbar_CSS.gif)
+</details>
+
+### 2. [Tasks样式高度定制美化](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Obsidian%20Tasks%E6%A0%B7%E5%BC%8F%E9%AB%98%E5%BA%A6%E5%AE%9A%E5%88%B6%E7%BE%8E%E5%8C%96.md)
+
+<details>
+  <summary>点击展开看效果</summary>
+
+![](https://github.com/ichris007/obsidian-share-showcase/raw/main/CSS-snippets/assets/tasks%E9%AB%98%E5%BA%A6%E5%AE%9A%E5%88%B6%E7%BE%8E%E5%8C%96.png)
 </details>
 
 ## 六、个人开发的插件
