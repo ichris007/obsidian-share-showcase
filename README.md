@@ -109,6 +109,27 @@ Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 ![](https://github.com/ichris007/obsidian-share-showcase/raw/main/CSS-snippets/assets/Task_due_tag.png)
 </details>
 
-## 六、个人开发的插件
+## 六、Bases样式优化
+### 1. Bases - 隐藏工具栏，悬停显示
+
+[代码](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Bases%20-%20%E9%9A%90%E8%97%8F%E5%B7%A5%E5%85%B7%E6%A0%8F%EF%BC%8C%E6%82%AC%E5%81%9C%E6%98%BE%E7%A4%BA.md)
+
+<details>
+  <summary>点击展开看效果</summary>
+
+![](https://github.com/ichris007/obsidian-share-showcase/raw/main/CSS-snippets/assets/base%E9%9A%90%E8%97%8F%E5%B7%A5%E5%85%B7%E6%A0%8F%E6%BC%94%E7%A4%BA.gif)
+</details>
+
+## 2. Bases-侧边栏-隐藏工具栏(悬停显示)
+
+[代码](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Bases-%E4%BE%A7%E8%BE%B9%E6%A0%8F-%E9%9A%90%E8%97%8F%E5%B7%A5%E5%85%B7%E6%A0%8F(%E6%82%AC%E5%81%9C%E6%98%BE%E7%A4%BA).md)
+
+<details>
+  <summary>点击展开看效果</summary>
+
+![](https://github.com/ichris007/obsidian-share-showcase/raw/main/CSS-snippets/assets/Bases_%E4%BE%A7%E8%BE%B9%E6%A0%8F_%E9%9A%90%E8%97%8F%E5%B7%A5%E5%85%B7%E6%A0%8F(%E6%82%AC%E5%81%9C%E6%98%BE%E7%A4%BA).gif)
+</details>
+
+## 七、个人开发的插件
 ### 1.快速开关指定插件
 [插件地址](https://github.com/ichris007/obsidian-quick-toggle-plugin)
