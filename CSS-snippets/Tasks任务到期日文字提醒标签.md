@@ -166,8 +166,6 @@
 
 <summary> Click to view code </summary>
 
-```
-
 ```css
 /********************************************************************
 Replace due date icon in task list with text description, e.g. "Due in 2 days"
@@ -309,7 +307,4 @@ Extracted & optimized: by 科叔 https://github.com/ichris007/Obsidian_Lifein
 .theme-dark .task-due[data-task-due^="past-7"],
 .theme-dark .task-due[data-task-due="past-far"] { box-shadow: var(--pill-6-outline-dark) 0px 0px 0px 1px inset; color: var(--pill-6-color-dark); background-color: var(--pill-6-bg-dark); }
 ```
-
-```
-
 </details>
