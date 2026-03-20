@@ -14,7 +14,7 @@ Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 不是程序员，但喜欢折腾。分享自己制作和修改的实用脚本和CSS Snippets。
 
 ## 一、日记模板
-[「日记皮肤」每天自动换一套](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/%E3%80%8C%E6%97%A5%E8%AE%B0%E7%9A%AE%E8%82%A4%E3%80%8D%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%89%B2%EF%BC%8C%E5%91%8A%E5%88%AB%E6%9E%AF%E7%87%A5%E7%AC%94%E8%AE%B0.md)
+代码：[「日记皮肤」每天自动换一套](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/%E3%80%8C%E6%97%A5%E8%AE%B0%E7%9A%AE%E8%82%A4%E3%80%8D%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%89%B2%EF%BC%8C%E5%91%8A%E5%88%AB%E6%9E%AF%E7%87%A5%E7%AC%94%E8%AE%B0.md)
 <details>
   <summary>点击展开看效果</summary>
 
@@ -27,14 +27,19 @@ Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 </details>
 
 ## 二、Callout Styling
-### 1.[Sidenotes 边注（右侧）](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Callout%20styling%20-%20Sidenotes_%E5%8F%B3%E8%BE%B9%E6%B3%A8.md)
+### 1.Sidenotes 边注（右侧）
+[代码](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Callout%20styling%20-%20Sidenotes_%E5%8F%B3%E8%BE%B9%E6%B3%A8.md)
+
 <details>
   <summary>点击展开看效果</summary>
   
 ![Callout_Sidenote](https://github.com/user-attachments/assets/0efb1853-2f04-49d5-a665-574d14ed1a51)
 </details>
 
-### 2.[Sidenotes 边注（可选双侧或单侧边注）](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Callout%20styling%20-%20Sidenote_%E5%8F%AF%E9%80%89%E5%8F%8C%E4%BE%A7%E6%88%96%E5%8D%95%E4%BE%A7%E8%BE%B9%E6%B3%A8.md)
+### 2.Sidenotes 边注（可选双侧或单侧边注）
+
+[代码](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/Callout%20styling%20-%20Sidenote_%E5%8F%AF%E9%80%89%E5%8F%8C%E4%BE%A7%E6%88%96%E5%8D%95%E4%BE%A7%E8%BE%B9%E6%B3%A8.md)
+
 <details>
   <summary>点击展开看效果</summary>
   
@@ -42,23 +47,30 @@ Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 </details>
 
 ## 三、Dataview使用
-### 1.[Dataviewjs实现卡片式任务面版（管理task插件原生任务列表）](https://github.com/ichris007/obsidian-share-showcase/blob/main/dataview/Dataviewjs%E5%AE%9E%E7%8E%B0%E5%8D%A1%E7%89%87%E5%BC%8F%E4%BB%BB%E5%8A%A1%E9%9D%A2%E7%89%88%EF%BC%88%E7%AE%A1%E7%90%86task%E6%8F%92%E4%BB%B6%E5%8E%9F%E7%94%9F%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%89.md)
+### 1.Dataviewjs实现卡片式任务面版（管理task插件原生任务列表）
+
+[代码](https://github.com/ichris007/obsidian-share-showcase/blob/main/dataview/%E5%8D%A1%E7%89%87%E5%BC%8F%E4%BB%BB%E5%8A%A1%E9%9D%A2%E7%89%88%EF%BC%88%E7%AE%A1%E7%90%86task%E6%8F%92%E4%BB%B6%E5%8E%9F%E7%94%9F%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%89.md)
 
 <details>
   <summary>点击展开看效果</summary>
   
-![卡片式任务面版](https://private-user-images.githubusercontent.com/30898935/440376585-023df5f9-b671-426b-b1e1-90a589679dfc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI1NTI2NzIsIm5iZiI6MTc3MjU1MjM3MiwicGF0aCI6Ii8zMDg5ODkzNS80NDAzNzY1ODUtMDIzZGY1ZjktYjY3MS00MjZiLWIxZTEtOTBhNTg5Njc5ZGZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAzVDE1MzkzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlN2E4NzM3NzFmY2YwZDU4ZWVjYWI4NTUxZjZjYTFkNTUwNWVlNTVkNmQxYmI1YjdlYTc3NDQ2Nzk3ZmYzN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.d8zzaPpsBSCd8vEOHHtA1ULR1nJtRdqsrgH3g_aNee4)
+![卡片式任务面版](https://private-user-images.githubusercontent.com/30898935/440376585-023df5f9-b671-426b-b1e1-90a589679dfc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzM5NzU5ODIsIm5iZiI6MTc3Mzk3NTY4MiwicGF0aCI6Ii8zMDg5ODkzNS80NDAzNzY1ODUtMDIzZGY1ZjktYjY3MS00MjZiLWIxZTEtOTBhNTg5Njc5ZGZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzIwVDAzMDEyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBhYzk1NTNlMzA0Yzc4ZjM5NTI0ZWY5Zjk5ZDU3OTI0NTViZjJhYzg4YjJjM2IzZmZmZDE0MDllZDdjMGI0M2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.4a-TdjScreE8XWEjgEY51ut0x7E48__J84YozGNmco0)
 </details>
 
-### 2.[年倒计时（像素格样式）](https://github.com/ichris007/obsidian-share-showcase/blob/main/dataview/%E5%B9%B4%E5%80%92%E8%AE%A1%E6%97%B6_%E5%83%8F%E7%B4%A0%E6%A0%BC%E6%A0%B7%E5%BC%8F.md)
+### 2.年倒计时（像素格样式）
+
+[代码](https://github.com/ichris007/obsidian-share-showcase/blob/main/dataview/%E5%B9%B4%E5%80%92%E8%AE%A1%E6%97%B6_%E5%83%8F%E7%B4%A0%E6%A0%BC%E6%A0%B7%E5%BC%8F.md)
+
 <details>
   <summary>点击展开看效果</summary>
   
-![年倒计时](https://private-user-images.githubusercontent.com/30898935/443918755-47ad72b9-7b5f-47a9-a5d9-4a20e469362e.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI1NTI3MzIsIm5iZiI6MTc3MjU1MjQzMiwicGF0aCI6Ii8zMDg5ODkzNS80NDM5MTg3NTUtNDdhZDcyYjktN2I1Zi00N2E5LWE1ZDktNGEyMGU0NjkzNjJlLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAzVDE1NDAzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcwMGZmZjBiZDBmNzM4OTc0OTdhYjJhNzFkYWI1NjdkYjY1OTVhMjUxMTExYjVmYTRmYjAzMjJmNTY2OGRiMzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.h8W1u_UvHa5VEcLVrzYzq5iF-cZWYjUbpLuyf_7I57U)
+![年倒计时](https://private-user-images.githubusercontent.com/30898935/443918755-47ad72b9-7b5f-47a9-a5d9-4a20e469362e.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzM5NzYwNDQsIm5iZiI6MTc3Mzk3NTc0NCwicGF0aCI6Ii8zMDg5ODkzNS80NDM5MTg3NTUtNDdhZDcyYjktN2I1Zi00N2E5LWE1ZDktNGEyMGU0NjkzNjJlLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzIwVDAzMDIyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgwNTA4MDE2ZTJhYzY1YzUzYjc5MGVmODFhZTBmMTVjM2JmY2QyOThmZDBkMjAxOGIyZjZmZDIwNmI1MjVkMTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.qmwns6UkirD2bjVijq3JFX74TqgCDhkSHG_YnROBga4)
 </details>
 
 ## 四、Datacore使用
-### 1. [Vault交互式全景看板_笔记热力图和回忆仪表盘](https://github.com/ichris007/obsidian-share-showcase/tree/main/datacore/Vault%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%85%A8%E6%99%AF%E7%9C%8B%E6%9D%BF_%E7%AC%94%E8%AE%B0%E7%83%AD%E5%8A%9B%E5%9B%BE%E5%92%8C%E5%9B%9E%E5%BF%86%E4%BB%AA%E8%A1%A8%E7%9B%98)
+### 1. Vault交互式全景看板_笔记热力图和回忆仪表盘
+
+[代码](https://github.com/ichris007/obsidian-share-showcase/tree/main/datacore/Vault%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%85%A8%E6%99%AF%E7%9C%8B%E6%9D%BF_%E7%AC%94%E8%AE%B0%E7%83%AD%E5%8A%9B%E5%9B%BE%E5%92%8C%E5%9B%9E%E5%BF%86%E4%BB%AA%E8%A1%A8%E7%9B%98)
 
 <details>
   <summary>点击展开看效果</summary>
