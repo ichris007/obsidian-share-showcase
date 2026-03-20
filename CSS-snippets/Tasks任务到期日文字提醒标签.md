@@ -2,6 +2,8 @@
 
 ![](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/assets/Task_due_tag.png)
 
+![](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/assets/Task_due_tag_en.png)
+
 ### 说明：
 - **兼容性**：这段代码自动适配深色/浅色模式。
 - **功能**：它会把类似 `📅 2023-10-27` 的原始显示彻底隐藏，并根据日期距离今天的远近，替换成带有颜色的语义化文字（如 "2天后到期"）。
