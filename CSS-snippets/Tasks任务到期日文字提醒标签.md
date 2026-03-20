@@ -236,22 +236,22 @@ Extracted & optimized: by 科叔 https://github.com/ichris007/Obsidian_Lifein
 
 /* --- Core: replace text content --- */
 .contains-task-list .task-due[data-task-due="future-far"] span { display: inline; } /* Far future shows original date */
-.contains-task-list .task-due[data-task-due="future-7d"]::after { content: "Due in 1 week" }
-.contains-task-list .task-due[data-task-due="future-6d"]::after { content: "Due in 6 days" }
-.contains-task-list .task-due[data-task-due="future-5d"]::after { content: "Due in 5 days" }
-.contains-task-list .task-due[data-task-due="future-4d"]::after { content: "Due in 4 days" }
-.contains-task-list .task-due[data-task-due="future-3d"]::after { content: "Due in 3 days" }
-.contains-task-list .task-due[data-task-due="future-2d"]::after { content: "Due in 2 days" }
-.contains-task-list .task-due[data-task-due="future-1d"]::after { content: "Due tomorrow" }
-.contains-task-list .task-due[data-task-due="today"]::after { content: "Due today" }
-.contains-task-list .task-due[data-task-due="past-1d"]::after { content: "Due yesterday" }
-.contains-task-list .task-due[data-task-due="past-2d"]::after { content: "Due 2 days ago" }
-.contains-task-list .task-due[data-task-due="past-3d"]::after { content: "Due 3 days ago" }
-.contains-task-list .task-due[data-task-due="past-4d"]::after { content: "Due 4 days ago" }
-.contains-task-list .task-due[data-task-due="past-5d"]::after { content: "Due 5 days ago" }
-.contains-task-list .task-due[data-task-due="past-6d"]::after { content: "Due 6 days ago" }
-.contains-task-list .task-due[data-task-due="past-7d"]::after { content: "Due 1 week ago" }
-.contains-task-list .task-due[data-task-due="past-far"]::after { content: "Overdue > 1 week" }
+.contains-task-list .task-due[data-task-due="future-7d"]::after { content: "due in a week" }
+.contains-task-list .task-due[data-task-due="future-6d"]::after { content: "due in 6 days" }
+.contains-task-list .task-due[data-task-due="future-5d"]::after { content: "due in 5 days" }
+.contains-task-list .task-due[data-task-due="future-4d"]::after { content: "due in 4 days" }
+.contains-task-list .task-due[data-task-due="future-3d"]::after { content: "due in 3 days" }
+.contains-task-list .task-due[data-task-due="future-2d"]::after { content: "due in 2 days" }
+.contains-task-list .task-due[data-task-due="future-1d"]::after { content: "due tomorrow" }
+.contains-task-list .task-due[data-task-due="today"]::after { content: "due today" }
+.contains-task-list .task-due[data-task-due="past-1d"]::after { content: "due yesterday" }
+.contains-task-list .task-due[data-task-due="past-2d"]::after { content: "due 2 days ago" }
+.contains-task-list .task-due[data-task-due="past-3d"]::after { content: "due 3 days ago" }
+.contains-task-list .task-due[data-task-due="past-4d"]::after { content: "due 4 days ago" }
+.contains-task-list .task-due[data-task-due="past-5d"]::after { content: "due 5 days ago" }
+.contains-task-list .task-due[data-task-due="past-6d"]::after { content: "due 6 days ago" }
+.contains-task-list .task-due[data-task-due="past-7d"]::after { content: "due 7 days ago" }
+.contains-task-list .task-due[data-task-due="past-far"]::after { content: "way overdue" }
 
 /* --- Light mode color assignment --- */
 .contains-task-list .task-due[data-task-due^="future-5"],
