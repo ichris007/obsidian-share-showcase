@@ -14,7 +14,19 @@ Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 不是程序员，但喜欢折腾。分享自己制作和修改的实用脚本和CSS Snippets。
 
 ## 一、日记模板
-代码：[「日记皮肤」每天自动换一套](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/%E3%80%8C%E6%97%A5%E8%AE%B0%E7%9A%AE%E8%82%A4%E3%80%8D%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%89%B2%EF%BC%8C%E5%91%8A%E5%88%AB%E6%9E%AF%E7%87%A5%E7%AC%94%E8%AE%B0.md)
+### 1. 智能化+结构化+可视化的日记系统
+
+[代码](https://github.com/ichris007/obsidian-share-showcase/tree/main/Dailynote)
+
+<details>
+  <summary>点击展开看效果</summary>
+
+  ![](https://github.com/ichris007/obsidian-share-showcase/blob/main/Dailynote/Dailynote.jpeg)
+
+</details>
+
+### 2. 「日记皮肤」每天自动换一套
+[代码](https://github.com/ichris007/obsidian-share-showcase/blob/main/CSS-snippets/%E3%80%8C%E6%97%A5%E8%AE%B0%E7%9A%AE%E8%82%A4%E3%80%8D%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%89%B2%EF%BC%8C%E5%91%8A%E5%88%AB%E6%9E%AF%E7%87%A5%E7%AC%94%E8%AE%B0.md)
 <details>
   <summary>点击展开看效果</summary>
 
