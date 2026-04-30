@@ -1,7 +1,7 @@
 ### 说明
 这个日记模板用了很长时间，也不断打磨，分享出来，给大家一个参考。
 
-这套日记模板是示例库——生产力和人生管理系统<a href="https://github.com/ichris007/Obsidian_Lifein" target="_blank">Lifein</a>的一部分，感兴趣的可以试试。
+这套日记模板是示例库——生产力和人生管理系统[Lifein](https://github.com/ichris007/Obsidian_Lifein)的一部分，感兴趣的可以试试。
 
 
 
