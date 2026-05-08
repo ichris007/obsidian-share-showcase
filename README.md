@@ -16,6 +16,9 @@ Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 # Obsidian-share-showcase
 不是程序员，但喜欢折腾。分享自己制作和修改的实用脚本、CSS Snippets和插件。
 
+近四年来，我关于Obsidian/Lifein使用的实践经验和深度思考：
+[Lifein 人生管理系统 | 科叔的 Obsidian 生产力与知识管理实践](https://lifein.vip/)
+
 ## 一、日记模板
 #### 1. 智能化+结构化+可视化的日记系统
 
