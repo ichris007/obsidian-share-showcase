@@ -1,4 +1,3 @@
-
 // ==========================================================================
 // Datacore 视图：Obsidian Vault 统计（晶核流光 - 9套全自适应深浅色磨砂版）
 // ==========================================================================
@@ -9,8 +8,8 @@
 const CONFIG = {
   // 基础显示与控制配置
   showTitle: true,              // 是否默认显示标题
-  titleText: "Vault 系统数据概览", // 自定义卡片主标题名称
-  currentTheme: "coreflow",     // 默认主题ID
+  titleText: "LifeinOS 系统数据概览", // 自定义卡片主标题名称
+  currentTheme: "sunset",     // 默认主题ID
   excludedFolders: ["Templates",".trash",".obsidian",".datacore"], // 全局默认排除目录
 
   // 文件总数统计包含的范围
@@ -22,14 +21,14 @@ const CONFIG = {
   },
 
   // 项目统计专项路径配置（支持父子目录精确隔离）
-  projectIncludedFolders: ["01Projects"],   // 项目统计包含目录（为空代表全库扫描）
+  projectIncludedFolders: [],   // 项目统计包含目录（为空代表全库扫描）
   projectExcludedFolders: [],   // 项目统计排除目录（可精准排除已包含目录的子目录）
 
   // 独立子面板显示控制
-  showDetailsPanel: true,       // 是否显示文件类型明细细分面板
-  showProjectPanel: true,       // 是否显示项目分布看板面板
-  showTaskPanel: true,          // 是否显示任务分布看板面板
-  showFooterPanel: true         // 是否显示底部脚注历史时间
+  showDetailsPanel: false,       // 是否显示文件类型明细细分面板
+  showProjectPanel: false,       // 是否显示项目分布看板面板
+  showTaskPanel: false,          // 是否显示任务分布看板面板
+  showFooterPanel: false         // 是否显示底部脚注历史时间
 };
 
 // ==========================================
@@ -733,4 +732,3 @@ function TaskBadge({ icon, label, value, color }) {
     </span>
   );
 }
-
