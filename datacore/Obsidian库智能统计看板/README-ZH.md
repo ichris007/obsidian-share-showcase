@@ -1,6 +1,6 @@
 ## VaultInsight - Obsidian 知识库智能统计看板
 
-[English](./README.md) | [中文](./README-ZH.md)
+[中文](./README.md) | [English](./README-EN.md) 
 
 ### 1. 📖 脚本概述
 
