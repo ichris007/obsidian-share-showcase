@@ -1,6 +1,6 @@
 # VaultInsight - Obsidian Knowledge Base Smart Statistics Dashboard
 
-[English](./README.mc) | [中文](./README-ZH.md)
+[English](./README.md) | [中文](./README-ZH.md)
 
 ### 1. 📖 Script Overview
 
