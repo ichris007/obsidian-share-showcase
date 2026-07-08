@@ -1,5 +1,7 @@
 ## VaultInsight - Obsidian 知识库智能统计看板
 
+[English](./README.md) | [中文](./README-ZH.md)
+
 ### 1. 📖 脚本概述
 
 这是一个基于 Obsidian Datacore插件的 Vault 统计看板脚本，为您提供了一套完整的笔记库数据监控与分析工具。通过可视化面板，您可以实时掌握知识库的运行状态，包括文件数量、标签统计、项目分布、任务进度等关键指标。
