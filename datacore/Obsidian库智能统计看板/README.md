@@ -6,6 +6,32 @@
 
 这是一个基于 Obsidian Datacore插件的 Vault 统计看板脚本，为您提供了一套完整的笔记库数据监控与分析工具。通过可视化面板，您可以实时掌握知识库的运行状态，包括文件数量、标签统计、项目分布、任务进度等关键指标。
 
+#### 9套主题全自适应深浅色磨砂版
+
+![VaultInsight 界面预览](./screenshot/vaultInsight2.gif)
+
+<details>
+  <summary>点击看更多效果</summary>
+
+![VaultInsight 界面预览](./screenshot/vaultInsight2_0.png)
+![VaultInsight 界面预览](./screenshot/vaultInsight2_1.png)
+![VaultInsight 界面预览](./screenshot/vaultInsight2_2.png)
+</details>
+
+#### 自动适配深色/浅色主题版
+
+![VaultInsight 界面预览](./screenshot/vaultInsight1_1.png)
+
+<details>
+  <summary>点击看更多效果</summary>
+  
+![VaultInsight 界面预览](./screenshot/vaultInsight1_2.png)
+![VaultInsight 界面预览](./screenshot/vaultInsight1_3.png)
+![VaultInsight 界面预览](./screenshot/vaultInsight1_4.png)
+![VaultInsight 界面预览](./screenshot/vaultInsight1_5.png)
+![VaultInsight 界面预览](./screenshot/vaultInsight1_6.png)
+</details>
+
 ### 2. ✨ 核心功能
 
 #### 2.1 📊 核心指标总览
