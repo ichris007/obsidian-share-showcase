@@ -1,10 +1,27 @@
-## TaskFlow Task List Enhancements: Priority Colors · Single-Line Truncation · Monochrome Icons · Compact Layout
+## TaskFlow Task List Enhancements: Priority Colors · Single-Line Fade · Monochrome Icons · Compact Layout
 
-**Before:**
-<img src="./assets/task_style_v2_origin_20260926.png" width="100%" />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
 
-**After:**
-<img src="./assets/task_style_v2_20260926.png" width="100%" />
+ <tr>
+   <td width="50%" align="center">
+     <strong> Before </strong>
+   </td>
+   <td width="50%" align="center">
+     <strong> After </strong>
+   </td>
+</tr>
+
+	
+<tr>
+	<td width="50%">
+		<img src="./assets/task_style_v2_origin_20260926.png" width="100%" />
+	</td>
+	<td width="50%">
+		<img src="./assets/task_style_v2_20260926.png" width="100%" />
+	</td>
+</tr>
+
+</table>
 
 
 ### Style Features:
@@ -56,7 +73,7 @@
 
 ---
 
-## code
+## CSS Code
 
 <details>
 <summary>Click to expand and copy code / 点击展开复制代码</summary>
