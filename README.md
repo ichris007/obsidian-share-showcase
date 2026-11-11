@@ -181,3 +181,18 @@ Slogan 是：**Live in, Level Up!**  （**中文：栖身，精进。**）
 
 #### 3. 快速开关指定插件
 [插件地址](https://github.com/ichris007/obsidian-quick-toggle-plugin)
+
+---
+<div align="center">
+
+### ☕ 支持作者
+
+如果这个项目给你带来了帮助，欢迎请我喝杯咖啡 ☕
+
+微信扫码↓
+
+<img src="https://github.com/ichris007/ichris007/blob/main/images/wechat_donate_qrcode0.png" width="300" alt="微信赞赏码">
+
+感谢每一份支持！
+
+</div>
